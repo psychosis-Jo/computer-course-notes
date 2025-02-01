@@ -1,0 +1,237 @@
+/* markdown.css */
+
+/* 定义自定义字体 */
+@font-face {
+    font-family: 'LiuJinSuiYueBiAnYouGuang';
+    src: url('LiuJinSuiYueBiAnYouGuang-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 全局样式 */
+body {
+    font-family: 'LiuJinSuiYueBiAnYouGuang', Arial, sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    background-color: #A0674B; /* 米白色背景色 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 内容容器样式，用于设置内容的左右边距 */
+.container {
+    max-width: 800px; /* 您可以根据需要调整最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px; /* 内容与容器边缘的间距 */
+}
+
+/* 其他样式保持不变 */
+/* ... */
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    color: #f0f0f0;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+/* 段落样式 */
+p {
+    margin-bottom: 1em;
+}
+
+/* 链接样式 */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 列表样式 */
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* 代码块样式 */
+pre {
+    background-color: #646A58;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+    background-color: #646A58;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+/* 引用样式 */
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #646A58;
+}
+
+/* 表格样式 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #646A58;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 强调样式 */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* 分割线样式 */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+/* 脚注样式 */
+.footnote {
+    font-size: 0.8em;
+    color: #BEC23F;
+}
+
+/* 任务列表样式 */
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+/* 自定义样式 */
+.markdown-alert {
+    padding: 0.5rem 1rem;
+    margin-bottom: 16px;
+    color: inherit;
+    border-left: .25em solid #BEC23F;
+}
+
+.markdown-alert>:first-child {
+    margin-top: 0
+}
+
+.markdown-alert>:last-child {
+    margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+    margin-right: 0.5rem;
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+    border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+    color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+    border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+    color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+    border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+    color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+    border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+    color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+    border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+    color: var(--color-caution);
+}
